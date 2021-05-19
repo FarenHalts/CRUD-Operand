@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap%27");
+@import "./variables.scss";
+
+.crudForm {
+    .el-form-item__label {
+        float: left;
+        margin-bottom: -15px;
+        color: $orange;
+        font-weight: 550;
+    }
+
+    .el-form-item {
+        margin-bottom: 10px;
+    }
+}
+.boxCrud {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 50vw;
+    margin: auto;
+    border: 1px solid $gray;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 0 71px -75px #000;
+}
+
+@media (max-width: 1200px) {
+    .boxCrud{
+        width: 80vw;
+    }
+    .handStyle{
+        display: none;
+    }
+}
+
+.handStyle {
+    position: absolute;
+    top: -310px;
+    right: 20px;
+    width: 20vw;
+}
+
+.el-table {
+    width: 95% !important;
+    margin: auto;
+    border: 1px solid $gray;
+    border-radius: 10px;
+    box-shadow: 0 0 71px -75px #000;
+}
+
+.el-button {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    font-weight: 600;
+}
+
+.el-button--primary {
+    color: #fff;
+    background-color: $green !important;
+    border: unset;
+
+    &:hover {
+        background-color: $dark-green !important;
+        border-color: unset !important;
+    }
+}
+.el-button--secondary {
+    color: $orange;
+    background-color: #fff;
+    border-color: $orange;
+
+    &:hover {
+        color: #fff;
+        background-color: $orange;
+        border-color: unset;
+    }
+}
+
+.el-button--danger {
+    color: #fff;
+    background-color: $red;
+    border-color: $red;
+
+    &:hover {
+        background-color: $dark-red;
+    }
+}
+
+.el-button--default {
+    border: 1px solid $blue;
+    color: $blue;
+
+    &:hover {
+        background-color: $blue;
+        color: #fff;
+    }
+}
+
+body {
+    background: $soft-gray;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+.title {
+    text-align: left;
+    margin: unset;
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+.el-message-box {
+    .el-button--primary {
+        color: #fff !important;
+        background-color: $red !important;
+        border-color: $red !important;
+
+        &:hover {
+            background-color: $dark-red !important;
+        }
+    }
+}
