@@ -1,5 +1,5 @@
-# Crud Operand
-You can access this project running on: [Color Picker](https://crud-operand.vercel.app)
+# Simple Crud
+You can access this project running on: [Simple Crud](https://crud-operand.vercel.app)
 
 ## Project setup
 ```
